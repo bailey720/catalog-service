@@ -58,7 +58,7 @@ docker run -d --name catalog-service --net catalog-network -p 9001:9001 -e SPRIN
 Note: Check if the network exists before running this.
 
 ```aiignore
-docker run -d --name polar-postgres --net catalog-network -e POSTGRES_USER=user -e POSTGRES_PASSWORD=password -e POSTGRES_DB=polardb_catalog -p 5432:5432 postgres:14.4
+docker run -d --name polar-postgres --net catalog-network -e POSTGRES_USER=user -e POSTGRES_PASSWORD=password -e POSTGRES_DB=polardb_catalog -p 5432:5432 postgres:14.12
 ```
 
 ## Kubernetes

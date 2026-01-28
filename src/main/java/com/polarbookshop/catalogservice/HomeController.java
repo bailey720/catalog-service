@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class HomeController {
+
     private final PolarProperties polarProperties;
 
     public HomeController(PolarProperties polarProperties) {
@@ -16,4 +17,5 @@ public class HomeController {
     public String getGreeting() {
         return polarProperties.getGreeting();
     }
+
 }
